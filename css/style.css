@@ -8,9 +8,6 @@
     padding-left: 10%;
 }
 
-.mikal{
-
-}
 .demo{
   height: 40px;
   width: 40px;
@@ -39,4 +36,31 @@ justify-content: center;
 }
 .profileContainer{
     transition: s ease-in;
+}
+.color{
+    color: #616161;
+}
+.rightside{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-bottom: 5rem;
+}
+.down{
+    display: flex;
+    padding-bottom: rem;
+}
+.color1{
+    color: #E4E4E4;
+}
+.num{
+    font-size: 2rem;
+    font-weight: 540;
+}
+body{
+    background-color: #F3F4F5;
+}
+.code1{
+    margin: 1.5rem;
+
 }
