@@ -12,6 +12,10 @@
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
 
     <title>Doctor AI</title>
 </head>
@@ -19,34 +23,84 @@
 
     <!--vav section-->
   <nav class="sidenav-trigger">
+
         <div class="nav-wrapper">
           <a href="#!" class="brand-logo">Doctor AI</a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <a href="#" data-target="menu-responsive" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+          </a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="sass.html"><i class="material-icons">account_circle</i></a></li>
-            <li><a href="badges.html"><i class="material-icons">notifications</i></a></li>
-            
+             <a class='dropdown-trigger' href='#' data-target='dropdown1'><i class="material-icons"><img class="demo" src="/images/mahakal1.png"></i></a>
+              <ul id='dropdown1' class='dropdown-content'>
+                    <div class="profileContainer">
+                      <li><a href="#!">one</a></li>
+                      <li><a href="#!">two</a></li>
+                      <li class="divider" tabindex="-1"></li>
+                      <li><a href="#!">three</a></li>
+                      <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+                      <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+                      <li><a href="badges.html"><i class="material-icons">notifications</i></a>
+                      
+                    </div>
+                </ul>
+             </a>
+            </li>
           </ul>
         </div>
       </nav>
-    
-      <ul class="sidenav" id="mobile-demo">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
+    <div class="small">
+      <ul class="sidenav" id="menu-responsive">
+        <li><i class="material-icons">add</i></li>
+        <li><a href="sass.html">malaliya</a></li>
+        <li><i class="material-icons">airline_seat_individual_suite</i></li>
+        <li><a href="badges.html">bad service</a></li>
+        <li><i class="material-icons">add_circle</i></li>
+        <li><a href="collapsible.html">blind</a></li>
+        <li><i class="material-icons">add</i></li>
+         <li><a href="mobile.html">cancer</a></li>
+        <li><i class="material-icons">add</i></li>
+        <li><a href="mobile.html">disease info</a></li>
       </ul>
+    </div>
+
+
+    <!-- Dropdown Structure -->
+    <ul id='dropdown1' class='dropdown-content'>
+      <li><a href="#!">one</a></li>
+      <li><a href="#!">two</a></li>
+      <li class="divider" tabindex="-1"></li>
+      <li><a href="#!">three</a></li>
+      <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+      <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+    </ul>
+
+    <div class="container">
+      <div class="row">
+      <div class="col l4">clnvbjdbsjbxjsbjdb</div>
+      <div class="col l4">csbjhsbjxbjhdjjavjhbh</div>
+      <div class="col l4">cjbidskdbskdhidkhkbdksd</div>
+
+        </div>
+    </div>
               
     
 
       
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="./javascritt/java.js"></script>
-<script>
-$(document).ready(function(){
-    $('.sidenav').sidenav();
-  });
-</script>
+    
+    <script>
 
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.dropdown-trigger');
+    var instances = M.Dropdown.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $('.dropdown-trigger').dropdown();
+
+    </script>
+
+<script src="./javascritt/java.js"></script>
 </body>
 </html>
