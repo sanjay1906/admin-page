@@ -4,163 +4,207 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <!--css links-->
     <link rel="stylesheet" href="css/style.css">
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        
+    
+        <!--fonts-icons link-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+        
+    
+        <!--jquery links-->
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
-
+    
+    
     <title>Doctor AI</title>
-</head>
-<body>
 
-    <!--vav section-->
-  <nav class="sidenav-trigger">
 
+  </head>
+  <body>
+
+    <!--nav section-->
+    <nav>
         <div class="nav-wrapper">
-          <a href="#!" class="brand-logo">Doctor AI</a>
-          <a href="#" data-target="menu-responsive" class="sidenav-trigger">
-            <i class="material-icons">menu</i>
-          </a>
-          <ul class="right hide-on-med-and-down">
-             <li><a class='dropdown-trigger' href='#' data-target='dropdown1'><i class=""><img class="demo" src="/images/mahakal1.png"></i></a></li>
-             <ul id='dropdown1' class='dropdown-content'>
-              <div class="profileContainer">
-                <li><a href="#!">one</a></li>
-                <li><a href="#!">two</a></li>
-                <li class="divider" tabindex="-1"></li>
-                <li><a href="#!">three</a></li>
-                <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-                <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
-              </div>
-          </ul>
-             
-             <li><a href="#" class='dropdown-trigger' data-target='dropdown1'><i class="material-icons">notifications</i></a></li>
-              <ul id='dropdown1' class='dropdown-content'>
-               <li><a href="#!">one</a></li>
-               <li><a href="#!">two</a></li>
-               <li class="divider" tabindex="-1"></li>
-               <li><a href="#!">three</a></li>
-               <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-               <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
-             </ul>
-                   
+              <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
+          
+              <!--sidenav Structure -->
+          
+             <ul id="slide-out" class="sidenav">
+              <li><a class="sidenav-close" href="#!"><i class="material-icons">close</i></a></li>
+              <li><a href="#!"><i class="material-icons">cloud</i></a></li>
+              <li><a href="#!">Second Link</a></li>
+              <li><div class="divider"></div></li>
+              <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
             </ul>
-        </div>
-      </nav>
-    <div class="small">
-      <ul class="sidenav" id="menu-responsive">
-        <li><i class="material-icons">add</i></li>
-        <li><a href="sass.html">malaliya</a></li>
-        <li><i class="material-icons">airline_seat_individual_suite</i></li>
-        <li><a href="badges.html">bad service</a></li>
-        <li><i class="material-icons">add_circle</i></li>
-        <li><a href="collapsible.html">blind</a></li>
-        <li><i class="material-icons">add</i></li>
-         <li><a href="mobile.html">cancer</a></li>
-        <li><i class="material-icons">add</i></li>
-        <li><a href="mobile.html">disease info</a></li>
-      </ul>
-    </div>
+              <a href="#!" class="brand-logo">Logo</a>
+        <ul class="right hide-on-med-and-down">
+            
+            <!-- Dropdown Trigger -->
+            <li><a class="dropdown-trigger btn-floating waves-effect waves-light" href="#!" data-target="dropdown1"><img src="images/mahakal1.png"></a></li>
+            <li><a class="dropdown-trigger" data-beloworigin="true" href="#!" data-target="dropdown2">notification</a></li>
+              
+                <!--NOTIFICATIONS Dropdown Structure -->
+              
+              <ul id="dropdown2" class="dropdown-content">
+                <li><a href="#!">NOTIFICATIONS</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">A new order has been placed</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">Completed the task</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">Settings updated</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">Event started</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">Message receiveds</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">All notifications</a></li>
+              </ul>  
+              
+                <!--profile Dropdown Structure -->
 
-    <div class="">
+              <ul id="dropdown1" class="dropdown-content">
+                  <li><a href="#!"><i class="material-icons">cloud</i>Profile</a></li>
+                  <li><a href="#!"><i class="material-icons">cloud</i>Billing</a></li>
+                  <li><a href="#!"><i class="material-icons">cloud</i>Settings</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#!"><i class="material-icons">cloud</i>Logout</a></li>
+              </ul>  
+          </ul>
+      </div>
+    </nav>
+           
+
+      <!--user feadback-->
+     
+     <div class="container">
       <div class="row code1">
-        <div class="code2">
-        <div class="col s6 m4">
-          <div class="card blue-blue ">
+        <div class="">
+        <div class="col s12 m6 l4">
+          <div class="card blue-blue code2">
             <div class="card-content white-text">
-              <div class="grey-800 float-left py-10 color">
-                  <i class="material-icons">person</i>
-                <i class="icon md-account grey-600 font-size-24 vertical-align-bottom mr-5"></i>User
+              <i class="material-icons color">person</i>
+              <div class="grey-800 float-left py-10 color font1">
+                  <i class="icon md-account grey-600 font-size-24 vertical-align-bottom mr-5"></i>User
               </div>
-              <div class="rightside"><span class="float-right grey-700 font-size-30 color num">1,253</span>
-              </div>
-              <div class="mb-20 grey-500 color1">
-                <i class="icon md-long-arrow-up green-500 font-size-16"></i> 15%
-                From this yesterday
-              </div>
-              <div class="ct-chart h-50"></div>
-                   </div>
-                  </div>
+                <div class="rightside"><span class="float-right grey-700 font-size-30 color num">1,253</span>
                 </div>
+                <div class="color1">
+                    <i class="material-icons font2">arrow_upward</i>
+                    <i class="font-size-16"></i> 15%
+                    From this yesterday
                 </div>
+            </div>
+          </div>
+        </div>
+      </div>
     
           
       
-                <div class="code2">
-        <div class="col s6 m4">
-          <div class="card darken-1">
+      <div class="">
+        <div class="col s12 m6 l4">
+          <div class="card darken-1 code2">
             <div class="card-content white-text">
-              <div class="grey-800 float-left py-10 color">
-                  <i class="material-icons">flash_on</i>
+                <i class="material-icons color">flash_on</i>
+                <div class="grey-800 float-left py-10 color font1">
                 <i class="icon md-account grey-600 font-size-24 vertical-align-bottom mr-5"></i>VISITS
               </div>
               <div class="rightside"><span class="float-right grey-700 font-size-30 color num">2,425</span>
               </div>
-              <div class="mb-20 grey-500 color1">
-                <i class="icon md-long-arrow-up green-500 font-size-16"></i> 15%
-                From this yesterday
+              <div class="color1">
+                  <i class="material-icons font2">arrow_upward</i>
+                  <i class="font-size-16"></i> 34.2%
+                  From this week
               </div>
-              <div class="ct-chart h-50"></div>
-            </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="code2">
-        <div class="col s6 m4">
-          <div class="card darken-1">
+        
+        
+        <div class="">
+        <div class="col s12 m6 l4">
+          <div class="card darken-1 code2">
             <div class="card-content white-text">
-                <div class="grey-800 float-left py-10 color">
-                    <i class="material-icons down">view_list</i>
+                <i class="material-icons color">view_list</i>
+                 <div class="grey-800 float-left py-10 color font1">
                   <i class="icon md-account grey-600 font-size-24 vertical-align-bottom mr-5"></i>Items
                 </div>
                 <div class="rightside"><span class="float-right grey-700 font-size-30 color num">845</span>
               </div>
-                
-              <div class="mb-20 grey-500 color1">
-                <i class="icon md-long-arrow-up green-500 font-size-16"></i>15%
-                From this yesterday
+              <div class="color1">
+              <i class="material-icons font3">arrow_downward</i>
+              <i class="font-size-16"></i>18.4%
+                  From this yesterday
               </div>
-              <div class="ct-chart h-50"></div>
-            </div>
-            
+               </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
       </div>
     </div>
-
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        
+      <!--card section-->
+    <div class="container">
+      <div class="row">
+          <div class="col s12 m6 l4">
+            <div class="card">
+              <div class="card-image">
+                <img src="/images/mahakal1.png">
+                <span class="card-title"><a class="btn-floating halfway-fab waves-effect waves-light red"><img src="/images/mahakal1.png"></a></span>
+                <a class="btn-floating halfway-fab waves-effect waves-light red"><img src="/images/mahakal1.png"></a>
+              </div>
+            <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+           </div>
+         </div>
+       </div>
+     
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="/images/mahakal1.png">
+              <span class="card-title">Card Title</span>
+              <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+            </div>
+          <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+         </div>
+       </div>
+     </div>
+   
+      <div class="col s12 m6 l4">
+        <div class="card">
+          <div class="card-image">
+            <img src="/images/mahakal1.png">
+            <span class="card-title">Card Title</span>
+            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+          </div>
+        <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
     
-    <script>
 
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.dropdown-trigger');
-    var instances = M.Dropdown.init(elems, options);
-  });
+<!--js link-->
 
-  // Or with jQuery
-
-  $('.dropdown-trigger').dropdown();
-
-    </script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   
     <script type="text/javascript">
-  
       $(".num").counterUp({delay:10,time:1000});
-    
     </script>
+    
+    <script src="./javascritt/java.js"></script>
 
-<script src="./javascritt/java.js"></script>
+
 </body>
 </html>
