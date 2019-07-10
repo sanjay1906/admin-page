@@ -29,8 +29,9 @@
     <!--nav section-->
     <nav>
         <div class="nav-wrapper">
-              <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
-          
+          <li onclick="openslidemenu()" id="click-icon"><a href="#"><i class="material-icons  " id="cancel">
+            menu
+        </i></a></li>
               <!--sidenav Structure -->
           
              <ul id="slide-out" class="sidenav">
@@ -41,11 +42,11 @@
               <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
             </ul>
               <a href="#!" class="brand-logo">Logo</a>
-        <ul class="right hide-on-med-and-down">
+              <ul class="right hide-on-med-and-down">
             
             <!-- Dropdown Trigger -->
-            <li><a class="dropdown-trigger btn-floating waves-effect waves-light" href="#!" data-target="dropdown1"><img src="images/mahakal1.png"></a></li>
-            <li><a class="dropdown-trigger" data-beloworigin="true" href="#!" data-target="dropdown2">notification</a></li>
+            <li><a class="dropdown-trigger btn-floating" href="#!" data-target="dropdown1"><img src="./images/mahakal1.png"></a></li>
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">notification</a></li>
               
                 <!--NOTIFICATIONS Dropdown Structure -->
               
@@ -68,11 +69,11 @@
                 <!--profile Dropdown Structure -->
 
               <ul id="dropdown1" class="dropdown-content">
-                  <li><a href="#!"><i class="material-icons">cloud</i>Profile</a></li>
-                  <li><a href="#!"><i class="material-icons">cloud</i>Billing</a></li>
-                  <li><a href="#!"><i class="material-icons">cloud</i>Settings</a></li>
+                  <li><a href="#!"><i class="material-icons">account_circle</i>Profile</a></li>
+                  <li><a href="#!"><i class="material-icons">account_balance_wallet</i>Billing</a></li>
+                  <li><a href="#!"><i class="material-icons">settings</i>Settings</a></li>
                   <li class="divider"></li>
-                  <li><a href="#!"><i class="material-icons">cloud</i>Logout</a></li>
+                  <li><a href="#!"><i class="material-icons">power_settings_new</i>Logout</a></li>
               </ul>  
           </ul>
       </div>
@@ -80,8 +81,8 @@
            
 
       <!--user feadback-->
-     
-     <div class="container">
+     <section></section>
+     <div class="container test">
       <div class="row code1">
         <div class="">
         <div class="col s12 m6 l4">
@@ -105,8 +106,8 @@
     
           
       
-      <div class="">
-        <div class="col s12 m6 l4">
+      
+        <div class="col s12 m6 l4" >
           <div class="card darken-1 code2">
             <div class="card-content white-text">
                 <i class="material-icons color">flash_on</i>
@@ -122,7 +123,6 @@
               </div>
               </div>
             </div>
-          </div>
         </div>
         
         
@@ -150,50 +150,7 @@
       </div>
     </div>
         
-      <!--card section-->
-    <div class="container">
-      <div class="row">
-          <div class="col s12 m6 l4">
-            <div class="card">
-              <div class="card-image">
-                <img src="/images/mahakal1.png">
-                <span class="card-title"><a class="btn-floating halfway-fab waves-effect waves-light red"><img src="/images/mahakal1.png"></a></span>
-                <a class="btn-floating halfway-fab waves-effect waves-light red"><img src="/images/mahakal1.png"></a>
-              </div>
-            <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-           </div>
-         </div>
-       </div>
      
-        <div class="col s12 m6 l4">
-          <div class="card">
-            <div class="card-image">
-              <img src="/images/mahakal1.png">
-              <span class="card-title">Card Title</span>
-              <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-            </div>
-          <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-         </div>
-       </div>
-     </div>
-   
-      <div class="col s12 m6 l4">
-        <div class="card">
-          <div class="card-image">
-            <img src="/images/mahakal1.png">
-            <span class="card-title">Card Title</span>
-            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-          </div>
-        <div class="card-content">
-            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-       </div>
-     </div>
-   </div>
- </div>
-</div>
-    
 
 <!--js link-->
 

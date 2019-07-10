@@ -4,10 +4,6 @@ body{
 
 /*navbar class*/
 
-.nav-wrapper{
-    background: #3F51B5;
-    
-}
 .demo{
   border-radius: 50%;
   height: 3rem;
@@ -67,4 +63,242 @@ body{
     justify-content: center;
 }    
 
-/*card section*/
+/*kishan class here*/
+
+
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap');
+
+
+.brand-logo {
+    height: 70px;
+    width: 110px;
+
+}
+
+.brand-logo img {
+    height: 100%;
+    width: 100%;
+    margin-top: 5px;
+}
+.test{
+    border:"1px solid black !important";
+}
+
+.card{
+    width: 20rem;
+}
+/* nav {
+   /* position: fixed;
+    z-index: 99;
+    margin-top: -50px;}*/
+
+
+.nav-wrapper {
+    background-color: #3F51B5!important;
+  /*  position: relative;
+   height: 40px !important; */
+
+}
+
+.nav-wrapper span {
+    position: absolute;
+    font-size: 20px;
+    top: 7px;
+    font-family: 'DM Serif Text', serif;
+    color: #ffff;
+}
+
+.side-nav {
+    height: 100% !important;
+    width: 0px;
+    z-index: 1;
+    position: relative;
+    margin-top: 50px !important;
+    opacity: 0.9;
+    padding-top: 20px !important;
+    transition-delay: 0.2s !important;
+    transition-timing-function: linear;
+    transition: 0.2s ease;
+    background-color: #fff;
+    box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.sidemenu-item:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+
+}
+
+.sidemenu-link {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.sidemenu-item i {
+    color: #757575;
+    font-size: 25px;
+    position: relative;
+    padding: 20px !important;
+
+}
+
+.sidemenu-item span {
+    color: #757575;
+    font-size: 15px !important;
+    text-decoration: none;
+    display: block !important;
+    margin-top: -15px !important;
+    padding-bottom: 15px !important;
+}
+
+.nav-wrapper i {
+    position: relative;
+    left: 15% !important;
+    margin-top: 8px;
+    cursor: pointer;
+} 
+
+
+#image-icon li {
+    height: 70px;
+}
+
+#image-icon img {
+    height: 40px;
+    width: 40px;
+    border-radius: 1000%;
+    margin-top: 13px;
+    position: relative;
+}
+
+#small-icon {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    right: 0px !important;
+    bottom: 16px;
+    margin-left: 33px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: #4CAF50;
+
+}
+
+.drop-down {
+    position: relative;
+
+}
+
+#dropdown1 {
+    background-color: #fff;
+    position: absolute;
+    width: 150px !important;
+    border-radius:5px;
+    top: -11px;
+    overflow: hidden;
+    text-align: center;
+    animation-delay: 1s;
+}
+
+#dropdown2 {
+    background-color: #fff;
+    position: absolute;
+    border-radius:5px;
+    left:7%;   
+    width: 300px !important;
+    overflow: hidden;
+    text-align: center;
+    animation-delay: 1s;
+
+}
+
+
+.drop-menu {
+    position: relative;
+}
+
+#dropdown1 li a:hover {
+    background-color: transparent;
+
+}
+
+#dropdown1 li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+
+}
+
+
+#dropdown2 li a:hover {
+    background-color: transparent;
+}
+
+#dropdown2 li:hover {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+
+#dropdown2 ul li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+@media (max-width:600px) {
+
+    .nav-wrapper i {
+        position: relative;
+        left: 3% !important;
+        margin-top: 8px;
+        cursor: pointer;
+    }
+
+    .side-nav {
+        margin: 14px 0px;
+    }
+
+    .brand-logo span {
+        margin: 5px 0px;
+
+    }
+    .
+    {
+    
+        position: relative;
+        left: 20%;
+           
+    }
+
+    #small-icon {
+        position: absolute;
+        height: 10px;
+        width: 10px;
+        right: 0px !important;
+        bottom: 16px;
+        margin-left: 45px;
+        border-radius: 50%;
+        border: 2px solid white;
+        background-color: #4CAF50;
+
+    }
+  
+
+    #dropdown2 i {
+        margin-left: 10px !important;
+    }
+
+
+
+
+
+}
+
+#click-icon {
+    list-style-type: none;
+}
+
+#click-icon i {
+
+    position: absolute !important;
+    top: 0;
+}

@@ -15,10 +15,6 @@ $('.dropdown-trigger').dropdown({
     closeOnClick: true,
     inDuration: 300,
     outDuration:225,
-    onOpenStart: null,
-    onOpenEnd: null,
-    onCloseStart: null,
-    onCloseEnd: null
   }
 );
 
@@ -44,3 +40,32 @@ $(document).ready(function(){
     $('.sidenav').sidenav();
   });
        
+/*kishan code here*/
+
+let isOPen = false;
+
+function openslidemenu() {
+    isOPen = !isOPen;
+    if (isOPen === true) {
+        document.getElementById('side-menu').style.width = "120px";
+
+        document.getElementById("cancel").innerHTML = "arrow_back";
+
+    } else {
+        document.getElementById('side-menu').style.width = "0px";
+
+        document.getElementById("cancel").innerHTML = "menu";
+    }
+}
+
+//first Dropdown Menu
+
+document.addEventListener('DOMContentLoaded', function () {
+    var elems = document.querySelectorAll('.drop-down');
+    var instances = M.Dropdown.init(elems, {});
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    var elems = document.querySelectorAll('.drop-menu');
+    var instances = M.Dropdown.init(elems, {});
+});
